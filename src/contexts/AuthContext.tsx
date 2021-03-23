@@ -6,13 +6,6 @@ interface ILoginFormData {
   password: string;
 }
 
-// interface IUser {
-//   id: number;
-//   email: string;
-//   avatar_url: string;
-//   name: string;
-// }
-
 interface AuthState {
   token: string;
 }
