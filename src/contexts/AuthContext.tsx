@@ -52,18 +52,6 @@ export const AuthProvider: React.FC = ({ children }) => {
     setData({} as AuthState);
   }, []);
 
-  // const updateUser = useCallback(
-  //   (user: IUser) => {
-  //     localStorage.setItem('@GoBarber:user', JSON.stringify(user));
-
-  //     setData({
-  //       token: data.token,
-  //       user,
-  //     });
-  //   },
-  //   [data.token],
-  // );
-
   return (
     <AuthContext.Provider value={{ token: data.token, signIn, signOut }}>
       {children}
